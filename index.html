@@ -52,6 +52,30 @@
         padding: 0.5rem;
       }
     }
+
+    .keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .keyword-btn {
+      padding: 0.5rem 1rem;
+      background-color: #e0e0e0;
+      border: none;
+      border-radius: 25px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .keyword-btn:hover {
+      background-color: #3498db;
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
   </style>
 </head>
 <body>
@@ -70,7 +94,15 @@
 
     <section>
       <h2>Ключові слова</h2>
-      <p>автоматизація, швейне підприємство, облік матеріалів, система замовлень, розрахунок вартості, накладні, програмне забезпечення</p>
+      <div class="keywords">
+        <button class="keyword-btn">автоматизація</button>
+        <button class="keyword-btn">швейне підприємство</button>
+        <button class="keyword-btn">облік матеріалів</button>
+        <button class="keyword-btn">система замовлень</button>
+        <button class="keyword-btn">розрахунок вартості</button>
+        <button class="keyword-btn">накладні</button>
+        <button class="keyword-btn">програмне забезпечення</button>
+      </div>
     </section>
 
     <section>
